@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">HICSS</string>
+    <string name="about_menu_label">About</string>
+    <string name="about_project_label">HICCS is a graduation project for the Higher Institute of Commercial and Computer Science.</string>
+    <string name="contact_label">Get In Touch</string>
+    <string name="contact_facebook_content_description">Contact us on facebook Image Button</string>
+    <string name="facebook_page_url">https://www.facebook.com/hiccsexam2016</string>
 </resources>

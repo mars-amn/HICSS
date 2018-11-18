@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/about_project_label_margin"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center"
+        android:text="@string/about_project_label"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat"
+        android:textSize="@dimen/about_project_label_text_size" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/contact_label_margin"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center"
+        android:text="@string/contact_label"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat"
+        android:textSize="@dimen/contact_label_text_size" />
+
+    <ImageButton
+        android:id="@+id/contactFacebookPageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="@string/contact_facebook_content_description"
+        android:src="@drawable/ic_facebook" />
+</LinearLayout>

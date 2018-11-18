@@ -22,7 +22,12 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'com.android.support:appcompat-v7:' + rootProject.librariesVersions.supportLibrary
     implementation 'com.android.support.constraint:constraint-layout:' + rootProject.librariesVersions.constraintLayout
+    implementation 'com.android.support:design:' + rootProject.librariesVersions.supportLibrary
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
     testImplementation 'junit:junit:' + rootProject.librariesVersions.jUnit
     androidTestImplementation 'com.android.support.test:runner:' + rootProject.librariesVersions.runner
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:' + rootProject.librariesVersions.espresso
+
+    implementation 'com.jakewharton:butterknife:' + rootProject.librariesVersions.butterKnife
+    annotationProcessor 'com.jakewharton:butterknife-compiler:' + rootProject.librariesVersions.butterKnife
 }
