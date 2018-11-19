@@ -1,6 +1,9 @@
 package alarish.hicss.hicss;
 
+import android.annotation.SuppressLint;
+import android.app.ActivityOptions;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
@@ -24,9 +27,19 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.aboutMenuItem:
-                launchAboutActivity();
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                    launchAboutActivityWithTransitions();
+                } else {
+                    launchAboutActivity();
+                }
         }
         return super.onOptionsItemSelected(item);
+    }
+    
+    @SuppressLint("NewApi")
+    private void launchAboutActivityWithTransitions() {
+        Bundle bundle = ActivityOptions.makeSceneTransitionAnimation(this).toBundle();
+        startActivity(new Intent(this, AboutActivity.class), bundle);
     }
 
     private void launchAboutActivity() {
