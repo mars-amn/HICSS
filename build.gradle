@@ -36,5 +36,4 @@ ext {
             runner          : '1.0.2',
             espresso        : '3.0.2',
             butterKnife     : '9.0.0-rc1'
-    ]
-}
+    ]}
