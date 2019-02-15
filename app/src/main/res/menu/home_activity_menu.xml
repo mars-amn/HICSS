@@ -5,5 +5,18 @@
         android:id="@+id/aboutMenuItem"
         android:title="@string/about_menu_label"
         app:showAsAction="never" />
+    <item android:id="@+id/home"
+        android:title="Home"/>
+
+
+    <item  android:id="@+id/logout"
+        android:title="log out"/>
+
+    <item android:id="@+id/close"
+        android:title="Exit" >
+
+
+    </item>
+
 
 </menu>

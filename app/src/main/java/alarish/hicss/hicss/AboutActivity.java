@@ -41,7 +41,11 @@ public class AboutActivity extends AppCompatActivity {
             Log.d(TAG, e.getMessage());
         }
         return new Intent(Intent.ACTION_VIEW, Uri.parse(mFacebookPageUrl));
+
+
+
     }
+
 
     private ApplicationInfo getFacebookApplicationInfo() throws PackageManager.NameNotFoundException {
         return getPackageManager().getApplicationInfo("com.facebook.katana", 0);
