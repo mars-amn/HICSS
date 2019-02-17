@@ -30,6 +30,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:orientation="vertical"
+                    android:onClick="student"
 
                     >
                     <ImageButton
@@ -39,7 +40,7 @@
                         android:layout_weight="3"
                         android:background="@android:drawable/menuitem_background"
                         android:clickable="true"
-                        android:onClick="website"
+                        android:onClick="student"
                         />
 
                     <TextView
@@ -47,7 +48,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1"
-                        android:onClick="website"
+                        android:onClick="student"
                         android:text="الطالب"
                         android:contextClickable="false"
                         android:textAlignment="center"
@@ -77,6 +78,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:orientation="vertical"
+                    android:onClick="staff"
 
                     >
 
@@ -87,7 +89,7 @@
                         android:layout_weight="3"
                         android:background="@android:drawable/menuitem_background"
                         android:clickable="true"
-                        android:onClick="website"
+                        android:onClick="staff"
                         android:contextClickable="false"
 
                        />
@@ -97,7 +99,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1"
-                        android:onClick="website"
+                        android:onClick="staff"
                         android:text="اعضاء هيئه التدريس"
                         android:background="@android:drawable/menuitem_background"
 
@@ -301,6 +303,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
+                    android:background="?attr/selectableItemBackgroundBorderless"
                     app:srcCompat="@drawable/ic_www"
                     />
 
@@ -309,6 +312,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:onClick="website"
+                    android:background="?attr/selectableItemBackgroundBorderless"
 
                     app:srcCompat="@drawable/ic_phone"
                     />
@@ -320,7 +324,7 @@
                     android:onClick="website"
                     app:srcCompat="@drawable/ic_placeholder"
 
-
+                    android:background="?attr/selectableItemBackgroundBorderless"
                     />
 
 
@@ -334,28 +338,31 @@
 
 
 
-                <ImageView
+                <ImageButton
                     android:id="@+id/facebook"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:onClick="facebook"
                     app:srcCompat="@drawable/ic_facebook"
+                    android:background="?attr/selectableItemBackgroundBorderless"
                     tools:ignore="OnClick,VectorDrawableCompat" />
 
-                <ImageView
+                <ImageButton
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:onClick="website"
+                    android:background="?attr/selectableItemBackgroundBorderless"
 
                     app:srcCompat="@drawable/ic_linkedin"/>
 
-                <ImageView
+                <ImageButton
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:onClick="website"
+                    android:background="?attr/selectableItemBackgroundBorderless"
                     app:srcCompat="@drawable/ic_youtube"/>
 
 

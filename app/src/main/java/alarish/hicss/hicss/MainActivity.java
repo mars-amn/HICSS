@@ -52,4 +52,14 @@ public class MainActivity extends AppCompatActivity {
     private void launchAboutActivity() {
         startActivity(new Intent(this, AboutActivity.class));
     }
+
+    public void student(View view) {
+        Intent i = new Intent(MainActivity.this, StudentActivity.class);
+        startActivity(i);
+    }
+
+    public void staff(View view) {
+        Intent i = new Intent(MainActivity.this, StaffActivity.class);
+        startActivity(i);
+    }
 }

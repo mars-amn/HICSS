@@ -13,6 +13,7 @@ android {
             useSupportLibrary = true
         }
     }
+
     buildTypes {
         release {
             minifyEnabled false
@@ -33,4 +34,9 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:' + rootProject.librariesVersions.espresso
     implementation 'com.jakewharton:butterknife:' + rootProject.librariesVersions.butterKnife
     annotationProcessor 'com.jakewharton:butterknife-compiler:' + rootProject.librariesVersions.butterKnife
+}
+android {
+    lintOptions {
+        abortOnError false
+    }
 }
